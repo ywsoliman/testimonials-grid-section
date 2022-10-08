@@ -36,8 +36,8 @@ main {
     margin: 24px;
 }
 
-main > div {
-    padding: 20px;
+main > article {
+    padding: 32px;
     border-radius: 12px;
 }
 
@@ -101,7 +101,8 @@ main > div {
     font-weight: 500;
 }
 
-q {
+blockquote {
+    margin: 0;
     opacity: 70%;
 }
 
