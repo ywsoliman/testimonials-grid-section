@@ -113,7 +113,7 @@ blockquote {
     main {
         display: block;
     }
-    main > div {
+    main > article {
         margin-top: 24px;
         margin-bottom: 24px;
     }
