@@ -108,7 +108,6 @@ q {
     body {
         height: auto;
     }
-    body,
     main {
         display: block;
     }
