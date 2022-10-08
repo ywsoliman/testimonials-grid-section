@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 13px;
+    --violet: hsl(263, 55%, 52%);
+    --dark-grayish-blue: hsl(217, 19%, 35%);
+    --dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --font-barlow: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    font-family: var(--font-barlow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "daniel daniel daniel daniel daniel daniel jonathan jonathan jonathan kira kira kira"
+        "jeanette jeanette jeanette patrick patrick patrick patrick patrick patrick kira kira kira";
+    gap: 24px 24px;
+    margin: 24px;
+}
+
+main > div {
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.daniel {
+    grid-area: daniel;
+    background-color: var(--violet);
+    color: var(--white);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+}
+
+.jonathan {
+    grid-area: jonathan;
+    background-color: var(--dark-grayish-blue);
+    color: var(--white);
+}
+
+.kira {
+    grid-area: kira;
+    background-color: var(--white);
+    color: var(--dark-grayish-blue);
+}
+
+.jeanette {
+    grid-area: jeanette;
+    background-color: var(--white);
+    color: var(--dark-grayish-blue);
+}
+
+.patrick {
+    grid-area: patrick;
+    background-color: var(--dark-blackish-blue);
+    color: var(--white);
+}
+
+.author img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.author .author-info p {
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.author .author-info .author-role {
+    opacity: 50%;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+q {
+    opacity: 70%;
+}
+
+@media (max-width: 725px) {
+    body {
+        height: auto;
+    }
+    body,
+    main {
+        display: block;
+    }
+    main > div {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
