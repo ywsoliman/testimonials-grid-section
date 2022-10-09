@@ -47,11 +47,11 @@ Users should be able to:
 main {
     max-width: 1100px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas:
-        "daniel daniel daniel daniel daniel daniel jonathan jonathan jonathan kira kira kira"
-        "jeanette jeanette jeanette patrick patrick patrick patrick patrick patrick kira kira kira";
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
     gap: 24px 24px;
     margin: 24px;
 }
